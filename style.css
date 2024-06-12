@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'hexa';
+    src: url(Caveat-Bold.ttf);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* navbar */
+
+.nav {
+    display: grid;
+    grid-template-columns: 20fr 10fr;
+    background-color: red;
+    font-size: 20px;
+}
+
+.nav p {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.nav ul li a:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+
+/* foto */
+
+.foto {
+    position: relative;
+    text-align: center;
+}
+
+.foto img {
+    width: 100%;
+    height: 700px;
+}
+
+.foto h1,
+.foto h2,
+.pencarian {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'hexa';
+    z-index: 1;
+}
+
+.foto h2 {
+    margin-top: 50px;
+}
+
+.pencarian {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.pencarian input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pencarian button {
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+
+/* diskon */
+
+.diskon {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+    margin-bottom: -20px;
+    margin-top: 50px;
+    border-radius: 200px;
+    text-align: center;
+    font-family: 'hexa';
+}
+
+.roti {
+    width: 300px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: transform 0.5s;
+    padding: 10px;
+}
+
+.roti img {
+    width: 100%;
+    height: 200px;
+}
+
+.diskon .roti:hover {
+    transform: scale(1.2);
+}
+
+.roti h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/* jenis pelayanan */
+
+.pelayanan {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: red;
+    text-align: center;
+}
+
+.item2 {
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 50px;
+}
+
+.pesan {
+    width: 200px;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.pesan img {
+    width: 100%;
+    height: 200px;
+}
+
+.pelayanan .pesan:hover {
+    transform: scale(1.2);
+}
+
+.pelayanan h6 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/* Paling banyak di beli */
+
+.favorit {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.item3 {
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 120px;
+}
+
+.beli {
+    width: 200px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    color: black;
+    transition: transform 0.5s;
+}
+
+.beli img {
+    width: 100%;
+    height: 200px;
+}
+
+.favorit .beli:hover {
+    transform: scale(1.2);
+}
+
+.favorit h6 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/* penjelasan */
+
+.item4 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+.singkat {
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 30fr 10fr;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.singkat p {
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    padding: 7%;
+}
+
+.singkat img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* reservasi */
+
+.reservasi {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+.icon img {
+    width: 17px;
+    height: 15px;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+}
